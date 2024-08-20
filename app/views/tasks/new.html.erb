@@ -1,0 +1,9 @@
+<%= form_with model: @task do |tf| %>
+  <%= tf.label :title %>
+  <%= tf.text_field :title %>
+  <%= tf.label :details %>
+  <%= tf.text_field :details %>
+  <%= tf.submit %>
+<% end %>
+<hr>
+<%= link_to("Back", all_tasks_path) %>
